@@ -8,6 +8,7 @@
 
 //Mac key code example
 //All the key code example other than below is described on the site linked in READEME.md
+//아래 이외의 모든 키 코드 예제는 READEME.md에 링크된 사이트에 설명되어 있습니다.
 #define KEY_ESC			53
 # define KEY_Q			12
 # define KEY_W			13
@@ -18,7 +19,9 @@
 # define KEY_D			2
 
 //Since key_press() can recieve only one argument, all the argument shold be gathered in one structure
+//key_press()는 하나의 인수만 받을 수 있으므로 모든 인수를 하나의 구조로 수집해야 합니다.
 //x,y and str are meaningless variables.
+//x,y 및 str은 의미 없는 변수입니다.
 typedef struct s_param{
 	int		x;
 	int		y;
@@ -26,6 +29,7 @@ typedef struct s_param{
 }				t_param;
 
 //Only param->x will be used. 
+//param->x만 사용됩니다.
 void			param_init(t_param *param)
 {
 	param->x = 3;
